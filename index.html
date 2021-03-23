@@ -6,7 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
-  <title>Frontend Mentor | [Blogr]</title>
+  <title>フロントエンドメンター | [Blogr]</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
@@ -14,45 +14,40 @@
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-      <a class="navbar-brand" href="#"></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-          </li>
-        </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-      </div>
+  <ul class="nav" id="navigation">
+    <div class="row">
+      <li class="nav-item col" id="logo"></li>
+      <li class="nav-item col" id="nav-left">
+        <div class="nav-item">
+          <a class="nav-link" href="#">Product</a>
+          <img src="./images/icon-arrow-light.svg" alt="arrow down icon image">
+        </div>
+        <div class="nav-item">
+          <a class="nav-link" href="#">Company</a>
+          <img src="./images/icon-arrow-light.svg" alt="arrow down icon image">
+        </div>
+        <div class="nav-item">
+          <a class="nav-link" href="#">Connect</a>
+          <img src="./images/icon-arrow-light.svg" alt="arrow down icon image">
+        </div>
+      </li>
+      <li class="nav-item col" id="nav-right">
+        <div class="nav-item">
+          <a class="nav-link" href="#">Login</a>
+        </div>
+        <div class="nav-item rounded-pill" id="signup">
+          <a class="nav-link" href="#">Sign Up</a>
+        </div>
+      </li>
     </div>
-  </nav>
+  </ul>
+
+  <section id="intro">
+
+  </section>
 
   A modern publishing platform
   Grow your audience and build your online brand

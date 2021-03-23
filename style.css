@@ -1,5 +1,100 @@
-* {
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@300;600&display=swap");
+*, ::after, ::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+}
+
+#navigation {
+  position: fixed;
+  padding: 40px 10vw;
+  color: white;
+  letter-spacing: 1px;
+  z-index: 10;
+}
+#navigation .row {
+  width: 100vw;
+}
+#navigation .row #logo {
+  background: url("../images/logo.svg") no-repeat;
+  height: 65px;
+  max-width: 150px;
+}
+#navigation .row .nav-item {
+  display: flex;
+  align-items: center;
+  height: 53px;
+}
+#navigation .row .nav-item .nav-link:hover {
+  text-decoration: underline;
+  color: inherit;
+}
+#navigation .row #nav-left {
+  display: flex;
+}
+#navigation .row #nav-left .nav-item {
+  margin: 0 30px 0 0;
+}
+#navigation .row #nav-left .nav-item .nav-link {
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+}
+#navigation .row #nav-right {
+  display: flex;
+}
+#navigation .row #nav-right .nav-item {
+  margin: 0;
+  padding: 20px 40px;
+}
+#navigation .row #nav-right .nav-item#signup {
+  color: #ff3d54;
+  background: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+#navigation .row #nav-right .nav-item#signup:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+#navigation .row #nav-right .nav-item#signup:hover a {
+  text-decoration: none;
+}
+
+#hamburger {
+  background: url("../images/logo.svg") no-repeat;
+  background-size: 65px;
+  height: 65px;
+}
+
+#intro {
+  background: linear-gradient(to right, #ff8f70, #ff3d54);
+  height: 475px;
+  border-radius: 0 0 0 80px;
+  position: relative;
+  overflow: hidden;
+}
+#intro::before {
+  content: "";
+  position: absolute;
+  top: 10%;
+  left: 30%;
+  height: 100%;
+  width: 100%;
+  border-radius: 60px;
+  background: url("../images/bg-pattern-intro.svg") no-repeat center/cover;
+  transform: scale(2.2);
+}
+
+@media (max-width: 790px) {
+  #navigation .row #nav-left, #navigation .row #nav-right {
+    display: none;
+  }
 }
