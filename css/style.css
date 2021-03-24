@@ -32,6 +32,10 @@ body {
   text-decoration: underline;
   color: inherit;
 }
+#navigation .row .nav-item .arrow-icon {
+  cursor: pointer;
+  transform: rotate(180deg);
+}
 #navigation .row .nav-item #hamburger {
   cursor: pointer;
 }
