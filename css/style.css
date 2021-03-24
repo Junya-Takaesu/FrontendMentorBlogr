@@ -28,13 +28,9 @@ body {
   align-items: center;
   height: 53px;
 }
-#navigation .row .nav-item .nav-link:hover {
+#navigation .row .nav-item:hover > .nav-link {
   text-decoration: underline;
   color: inherit;
-}
-#navigation .row .nav-item .arrow-icon {
-  cursor: pointer;
-  transform: rotate(180deg);
 }
 #navigation .row .nav-item #hamburger {
   cursor: pointer;
@@ -44,9 +40,13 @@ body {
 }
 #navigation .row #nav-left .nav-item {
   margin: 0 3% 0 0;
+  cursor: pointer;
 }
 #navigation .row #nav-left .nav-item .nav-link {
-  padding: 0.5rem 0.5rem 0.5rem 1rem;
+  padding: 0.5rem 0.3em 0.5rem 1rem;
+}
+#navigation .row #nav-left .nav-item .arrow-icon {
+  transform: rotate(180deg);
 }
 #navigation .row #nav-right {
   display: flex;
