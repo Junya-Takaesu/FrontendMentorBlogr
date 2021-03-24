@@ -11,10 +11,31 @@
       display: flex;
       align-items: center;
       height: 53px;
+      position: relative;
+
       &:hover > .nav-link {
         text-decoration: underline;
         color: inherit;
       }
+
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 16%;
+        color: $blue-black-very-dark;
+        background: $white;
+        border-radius: 0.3rem;
+        padding: 30px 40px 30px 20px;
+        a:hover {
+          color: $blue-black-very-dark;
+          font-weight: 600;
+        }
+        &.show {
+          display: block;
+        }
+      }
+
       #hamburger {
         cursor: pointer;
       }
@@ -28,8 +49,8 @@
         .nav-link {
           padding: 0.5rem 0.3em 0.5rem 1rem;
         }
-        .arrow-icon {
-          transform: rotate(180deg);
+        .arrow-icon-expand {
+          transform: rotate(-180deg);
         }
       }
     }

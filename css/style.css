@@ -27,10 +27,28 @@ body {
   display: flex;
   align-items: center;
   height: 53px;
+  position: relative;
 }
 #navigation .row .nav-item:hover > .nav-link {
   text-decoration: underline;
   color: inherit;
+}
+#navigation .row .nav-item .dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 16%;
+  color: #25252d;
+  background: white;
+  border-radius: 0.3rem;
+  padding: 30px 40px 30px 20px;
+}
+#navigation .row .nav-item .dropdown-content a:hover {
+  color: #25252d;
+  font-weight: 600;
+}
+#navigation .row .nav-item .dropdown-content.show {
+  display: block;
 }
 #navigation .row .nav-item #hamburger {
   cursor: pointer;
@@ -45,8 +63,8 @@ body {
 #navigation .row #nav-left .nav-item .nav-link {
   padding: 0.5rem 0.3em 0.5rem 1rem;
 }
-#navigation .row #nav-left .nav-item .arrow-icon {
-  transform: rotate(180deg);
+#navigation .row #nav-left .nav-item .arrow-icon-expand {
+  transform: rotate(-180deg);
 }
 #navigation .row #nav-right {
   display: flex;
