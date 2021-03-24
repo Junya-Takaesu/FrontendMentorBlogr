@@ -15,10 +15,6 @@
         text-decoration: underline;
         color: inherit;
       }
-      .arrow-icon {
-        cursor: pointer;
-        transform: rotate(180deg);
-      }
       #hamburger {
         cursor: pointer;
       }
@@ -28,8 +24,12 @@
       display: flex;
       .nav-item {
         margin: 0 3% 0 0;
+        cursor: pointer;
         .nav-link {
-          padding: 0.5rem 0.5rem 0.5rem 1rem;
+          padding: 0.5rem 0.3em 0.5rem 1rem;
+        }
+        .arrow-icon {
+          transform: rotate(180deg);
         }
       }
     }
