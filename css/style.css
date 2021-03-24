@@ -83,11 +83,7 @@ body {
 }
 
 @media (max-width: 768px) {
-  #navigation .row #nav-left, #navigation .row #nav-right {
-    display: none;
-  }
-
-  #logo {
+  #navigation .row #logo {
     height: 25px;
   }
 }

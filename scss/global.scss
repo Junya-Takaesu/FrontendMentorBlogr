@@ -93,11 +93,8 @@ body {
 
 @media (max-width: 768px) {
   #navigation .row {
-    #nav-left, #nav-right {
-      display: none;
+    #logo {
+      height: 25px;
     }
-  }
-  #logo {
-    height: 25px;
   }
 }
