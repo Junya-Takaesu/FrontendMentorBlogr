@@ -63,12 +63,6 @@ body {
   text-decoration: none;
 }
 
-#hamburger {
-  background: url("../images/logo.svg") no-repeat;
-  background-size: 65px;
-  height: 65px;
-}
-
 #intro {
   background: linear-gradient(to right, #ff8f70, #ff3d54);
   height: 475px;
