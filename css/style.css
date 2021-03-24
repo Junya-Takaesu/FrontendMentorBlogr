@@ -32,6 +32,9 @@ body {
   text-decoration: underline;
   color: inherit;
 }
+#navigation .row .nav-item #hamburger {
+  cursor: pointer;
+}
 #navigation .row #nav-left {
   display: flex;
 }
