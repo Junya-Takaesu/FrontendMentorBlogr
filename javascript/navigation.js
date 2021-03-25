@@ -1,7 +1,11 @@
+import Modal from "./modal.js";
+const modal = new Modal();
+
 export default class Navigation {
 
   initialize() {
     const navItems = document.querySelectorAll("#nav-left .nav-item");
+    const hamburgerIcon = document.querySelector("#hamburger");
 
     navItems.forEach(navItem => {
       navItem.addEventListener("click", () => {
@@ -12,6 +16,17 @@ export default class Navigation {
     window.addEventListener("click", (event) => {
       if (!event.target.matches(".nav-link")) {
         this.toggleDropDownContent();
+      }
+    });
+
+    hamburgerIcon.addEventListener("click", () => {
+      const url = new URL(hamburgerIcon.src);
+      if (url.pathname == "/images/icon-hamburger.svg") {
+        hamburgerIcon.src = "images/icon-close.svg";
+        modal.toggle();
+      } else {
+        hamburgerIcon.src = "images/icon-hamburger.svg";
+        modal.toggle();
       }
     });
   }

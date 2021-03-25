@@ -14,3 +14,15 @@ a {
 body {
   font-family: 'Overpass', sans-serif;
 }
+
+@keyframes growDown {
+  0% {
+    transform: scaleY(0)
+  }
+  90% {
+    transform: scaleY(1.1)
+  }
+  100% {
+    transform: scaleY(1)
+  }
+}
