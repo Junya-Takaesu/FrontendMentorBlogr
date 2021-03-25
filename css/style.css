@@ -135,24 +135,35 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
-  padding: 1.2rem 2rem 0;
+  padding: 1.2rem 1.2rem 0;
 }
 #modal .modal-menu .menu-item {
   margin: 10px 0;
   text-align: center;
+  width: 100%;
+}
+#modal .modal-menu .menu-item.active {
+  color: rgba(75, 88, 98, 0.7);
+}
+#modal .modal-menu .menu-item .arrow-icon-default {
+  transition: 0.2s;
+}
+#modal .modal-menu .menu-item .arrow-icon-expand {
+  transform: rotate(-180deg);
 }
 #modal .modal-menu .menu-item .dropdown-content {
   display: none;
-  color: #25252d;
   background: rgba(200, 200, 203, 0.2);
-  border-radius: 0.3rem;
-  padding: 20px 40px 20px 20px;
+  border-radius: 5px;
+  text-align: center;
+  padding: 20px 0;
   animation: growDown 0.2s ease-in-out forwards;
   transform-origin: top center;
 }
 #modal .modal-menu .menu-item .dropdown-content a {
   display: block;
   font-size: 14px;
+  margin: 10px 0;
 }
 #modal .modal-menu .menu-item .dropdown-content a:hover {
   color: #25252d;

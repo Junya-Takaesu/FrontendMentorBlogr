@@ -30,6 +30,14 @@ export default class Modal {
       arrowIconImg.src = "./images/icon-arrow-dark.svg";
       menuItemDiv.classList.add("menu-item");
 
+      menuItemDiv.addEventListener("click", event => {
+        event.stopPropagation();
+        const dropDownContent = menuItemDiv.querySelector(".dropdown-content");
+        dropDownContent.classList.toggle("show");
+        arrowIconImg.classList.toggle("arrow-icon-expand");
+        menuItemDiv.classList.toggle("active");
+      });
+
       modalMenuUpper.append(menuItemDiv);
     });
 
@@ -46,7 +54,6 @@ export default class Modal {
 
       modalMenuLower.append(menuItemDiv);
     });
-
 
     modalMenuList.append(modalMenuUpper);
     modalMenuList.append(modalMenuLower);
