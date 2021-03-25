@@ -9,8 +9,8 @@ export default class Navigation {
       });
     });
 
-    window.addEventListener("click", (event) =>{
-      if(!event.target.matches(".nav-link")) {
+    window.addEventListener("click", (event) => {
+      if (!event.target.matches(".nav-link")) {
         this.toggleDropDownContent();
       }
     });
