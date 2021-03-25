@@ -68,7 +68,6 @@ body {
 }
 #navigation .row #nav-right {
   display: flex;
-  justify-content: center;
 }
 #navigation .row #nav-right .nav-item {
   margin: 0;
