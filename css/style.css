@@ -84,9 +84,11 @@ body {
   font-size: 1.1rem;
   font-weight: 600;
   cursor: pointer;
+  transition: 0.2s;
 }
 #navigation .row #nav-right .nav-item#signup:hover {
   background: rgba(255, 255, 255, 0.4);
+  color: white;
 }
 #navigation .row #nav-right .nav-item#signup:hover a {
   text-decoration: none;
