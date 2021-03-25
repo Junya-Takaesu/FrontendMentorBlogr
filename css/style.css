@@ -41,6 +41,7 @@ body {
   right: -120%;
   color: #25252d;
   background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   border-radius: 0.3rem;
   padding: 20px 40px 20px 20px;
   animation: growDown 0.2s ease-in-out forwards;
