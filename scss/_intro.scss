@@ -1,9 +1,14 @@
 #intro {
   background: linear-gradient(to right, $red-very-light, $red-light);
-  height: 475px;
+  height: 530px;
   border-radius: 0 0 0 80px;
   position: relative;
   overflow: hidden;
+  padding: 170px 30px;
+  color: $white;
+  & * {
+    position: relative;
+  }
   &::before {
     content: "";
     position: absolute;
@@ -14,5 +19,14 @@
     border-radius: 60px;
     background: url("../images/bg-pattern-intro.svg") no-repeat center/cover;
     transform: scale(2.2);
+  }
+  p {
+    font-weight: 100;
+  }
+  .signup {
+    @include rounded-button;
+  }
+  .learn-more {
+    @include rounded-button($bg: rgba(255,255,255,0), $color: $white, $color-on-hover: $red-light, $transparency-on-hover: 1);
   }
 }

@@ -1,0 +1,15 @@
+@mixin rounded-button($bg: $white, $color: $red-light, $color-on-hover: $color, $transparency-on-hover: 0.4) {
+  font-weight: 600;
+  background: $bg;
+  color: $color;
+  background: $bg;
+  transition: $animation-duration;
+  &:hover {
+    background: rgba($bg, $transparency-on-hover);
+    color: $color-on-hover;
+    text-decoration: none;
+    a {
+      text-decoration: none;
+    }
+  }
+}

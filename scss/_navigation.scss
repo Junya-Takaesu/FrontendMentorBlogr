@@ -13,9 +13,12 @@
       height: 53px;
       position: relative;
 
-      &:hover > .nav-link {
-        text-decoration: underline;
-        color: inherit;
+      .nav-link {
+        font-weight: 600;
+        &:hover {
+          text-decoration: underline;
+          color: inherit;
+        }
       }
 
       .dropdown-content {
@@ -70,24 +73,9 @@
     }
 
     #nav-right {
-      display: flex;
-      .nav-item {
-        margin: 0;
-        padding: 20px 4%;
-        &#signup {
-          color: $red-light;
-          background: $white;
-          font-size: 1.1rem;
-          font-weight: 600;
-          cursor: pointer;
-          transition: $animation-duration;
-          &:hover {
-            background: rgba($white,0.4);
-            color: $white;
-            a {
-              text-decoration: none;
-            }
-          }
+      .nav-link {
+        &.signup {
+          @include rounded-button;
         }
       }
     }
