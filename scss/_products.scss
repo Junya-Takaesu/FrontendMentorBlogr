@@ -1,0 +1,20 @@
+.products {
+  color: $blue-grayish-very-dark;
+  overflow: hidden;
+  min-height: 90vh;
+  h1, h2 {
+    color: $blue-very-dark;
+  }
+  .image-area {
+    #img-for-desktop {
+      position: absolute;
+      height: 100%;
+      top: 0;
+      left: 90vh;
+    }
+  }
+}
+
+#editor-description {
+  position: relative;
+}

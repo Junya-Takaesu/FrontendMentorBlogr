@@ -248,6 +248,25 @@ body {
   text-decoration: none;
 }
 
+.products {
+  color: #4b5862;
+  overflow: hidden;
+  min-height: 90vh;
+}
+.products h1, .products h2 {
+  color: #1f3f5b;
+}
+.products .image-area #img-for-desktop {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 90vh;
+}
+
+#editor-description {
+  position: relative;
+}
+
 @media (max-width: 768px) {
   #navigation .row #logo {
     height: 25px;
