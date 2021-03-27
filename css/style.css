@@ -106,6 +106,9 @@ body {
 #navigation .row #nav-right .nav-link.signup:hover a {
   text-decoration: none;
 }
+#navigation .row.background-filled {
+  background: linear-gradient(to right, #ff8f70, #ff3d54);
+}
 
 #modal {
   display: block;

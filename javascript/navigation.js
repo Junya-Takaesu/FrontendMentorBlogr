@@ -6,6 +6,8 @@ export default class Navigation {
   initialize() {
     const navItems = document.querySelectorAll("#nav-left .nav-item");
     const hamburgerIcon = document.querySelector("#hamburger");
+    const navigationRow = document.querySelector("#navigation .row");
+    console.log(navigationRow);
 
     navItems.forEach(navItem => {
       navItem.addEventListener("click", () => {
@@ -27,6 +29,18 @@ export default class Navigation {
       } else {
         hamburgerIcon.src = "images/icon-hamburger.svg";
         modal.toggle();
+      }
+    });
+
+    window.addEventListener("scroll", () =>{
+      if (400 < window.scrollY) {
+        if (!navigationRow.classList.contains("background-filled")) {
+          navigationRow.classList.add("background-filled");
+        }
+      } else {
+        if (navigationRow.classList.contains("background-filled")) {
+          navigationRow.classList.remove("background-filled");
+        }
       }
     });
   }

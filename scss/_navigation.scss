@@ -79,5 +79,9 @@
         }
       }
     }
+
+    &.background-filled {
+      background: linear-gradient(to right, $red-very-light, $red-light);
+    }
   }
 }
