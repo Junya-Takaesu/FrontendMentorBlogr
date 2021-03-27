@@ -29,7 +29,6 @@
     .menu-item {
       margin: 10px 0;
       text-align: center;
-      width: 100%;
 
       &.active {
         color: rgba($blue-grayish-very-dark, 0.7);
@@ -75,6 +74,9 @@
       align-items: center;
       padding-bottom: 20px;
       border-bottom: 1px solid $blue-grayish;
+      .menu-item {
+        width: 100%;
+      }
     }
 
     .menu-lower {

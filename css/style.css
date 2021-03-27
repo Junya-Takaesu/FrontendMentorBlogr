@@ -136,7 +136,6 @@ body {
 #modal .modal-menu .menu-item {
   margin: 10px 0;
   text-align: center;
-  width: 100%;
 }
 #modal .modal-menu .menu-item.active {
   color: rgba(75, 88, 98, 0.7);
@@ -175,6 +174,9 @@ body {
   align-items: center;
   padding-bottom: 20px;
   border-bottom: 1px solid #c8c8cb;
+}
+#modal .modal-menu .menu-upper .menu-item {
+  width: 100%;
 }
 #modal .modal-menu .menu-lower {
   height: 100%;

@@ -10,7 +10,7 @@ export default class Modal {
     const modalMenuUpper = document.createElement("li");
     const modalMenuLower = document.createElement("li");
     const upperItems = document.querySelectorAll("#nav-left .nav-item");
-    const lowerItems = document.querySelectorAll("#nav-right .nav-item");
+    const lowerItems = document.querySelectorAll("#nav-right .nav-link");
 
     modalAside.id = "modal";
     modalAside.classList.add("hide");
@@ -41,17 +41,14 @@ export default class Modal {
       modalMenuUpper.append(menuItemDiv);
     });
 
+    console.log(lowerItems);
     lowerItems.forEach(item => {
       const menuItemDiv = item.cloneNode(true);
-      const menuAnchor = menuItemDiv.querySelector(".nav-link");
 
-      menuItemDiv.classList.remove("nav-item");
+      menuItemDiv.classList.remove("nav-item", "nav-link", "nav-button", "me-2", "px-4", "py-3", "signup");
       menuItemDiv.removeAttribute("id");
-      menuAnchor.removeAttribute("class");
-      menuAnchor.removeAttribute("id");
 
       menuItemDiv.classList.add("menu-item");
-
       modalMenuLower.append(menuItemDiv);
     });
 
