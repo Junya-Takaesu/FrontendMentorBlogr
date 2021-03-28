@@ -256,19 +256,33 @@ main p {
   text-decoration: none;
 }
 
-.products {
+.products1 {
   color: #4b5862;
   overflow: hidden;
   min-height: 90vh;
 }
-.products h1, .products h2 {
+.products1 h1, .products1 h2 {
   color: #1f3f5b;
 }
-.products .image-area #img-for-desktop {
+.products1 .image-area .img-for-desktop {
   position: absolute;
   height: 100%;
   top: 0;
-  left: 90vh;
+  left: 60%;
+}
+
+.products2 {
+  color: #4b5862;
+  min-height: 90vh;
+}
+.products2 .container .row .image-area .img-for-desktop {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: -19%;
+}
+.products2 .container .row article {
+  padding-top: 200px;
 }
 
 #editor-description {
@@ -311,6 +325,9 @@ main p {
 @media (max-width: 768px) {
   #navigation .row #logo {
     height: 25px;
+  }
+  #navigation .row .nav-item {
+    height: 23px;
   }
 }
 @media (min-width: 768px) {

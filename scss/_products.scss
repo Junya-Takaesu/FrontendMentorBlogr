@@ -1,4 +1,4 @@
-.products {
+.products1 {
   color: $blue-grayish-very-dark;
   overflow: hidden;
   min-height: 90vh;
@@ -6,11 +6,32 @@
     color: $blue-very-dark;
   }
   .image-area {
-    #img-for-desktop {
+    .img-for-desktop {
       position: absolute;
       height: 100%;
       top: 0;
-      left: 90vh;
+      left: 60%;
+    }
+  }
+}
+
+.products2 {
+  color: $blue-grayish-very-dark;
+  min-height: 90vh;
+
+  .container {
+    .row {
+      .image-area {
+        .img-for-desktop {
+          position: absolute;
+          height: 100%;
+          top: 0;
+          left: -19%;
+        }
+      }
+      article {
+        padding-top: 200px;
+      }
     }
   }
 }

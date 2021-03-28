@@ -33,7 +33,7 @@ export default class Navigation {
     });
 
     window.addEventListener("scroll", () =>{
-      if (400 < window.scrollY) {
+      if (250 < window.scrollY) {
         if (!navigationRow.classList.contains("background-filled")) {
           navigationRow.classList.add("background-filled");
         }
