@@ -1,0 +1,21 @@
+#feature {
+  height: 600px;
+  color: $blue-grayish;
+  article {
+    background: $blue-feature;
+    border-radius: 0 80px 0 80px;
+    height: 460px;
+
+    .container, .row {
+      height: 100%;
+    }
+
+    img {
+      transform: translateY(-80px);
+    }
+
+    #feature-description {
+      height: 100%;
+    }
+  }
+}

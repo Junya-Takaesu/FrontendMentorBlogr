@@ -15,6 +15,10 @@ body {
   font-family: 'Overpass', sans-serif;
 }
 
+main p {
+  font-size: 14px;
+}
+
 @keyframes growDown {
   0% {
     transform: scaleY(0)
