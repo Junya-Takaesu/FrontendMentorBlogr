@@ -1,21 +1,37 @@
 #feature {
   height: 600px;
   color: $blue-grayish;
+  margin-top: 200px;
   article {
-    background: $blue-feature;
+    background: linear-gradient(to right, $blue-very-dark, $blue-feature);
     border-radius: 0 80px 0 80px;
-    height: 460px;
+    height: 550px;
 
-    .container, .row {
+    .container-fluid, .row {
       height: 100%;
     }
 
-    img {
-      transform: translateY(-80px);
-    }
+    .container-fluid .row {
+      position: relative;
 
-    #feature-description {
-      height: 100%;
+      #feature-background-image {
+        position: absolute;
+        height: 100%;
+        background: url(../images/bg-pattern-circles.svg) no-repeat;
+        background-size: 160%;
+        background-position: 50% 500%;
+        border-radius: 0 80px 0 80px;
+      }
+
+      img {
+        margin-top: -170px;
+        z-index: 10;
+      }
+
+      #feature-description {
+        margin-bottom: 100px;
+        z-index: 10;
+      }
     }
   }
 }

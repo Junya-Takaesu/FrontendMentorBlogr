@@ -16,6 +16,7 @@ body {
 
 main p {
   font-size: 14px;
+  line-height: 1.7rem;
 }
 
 @keyframes growDown {
@@ -33,7 +34,7 @@ main p {
   position: fixed;
   color: white;
   letter-spacing: 1px;
-  z-index: 10;
+  z-index: 30;
 }
 #navigation .row {
   width: 100vw;
@@ -277,24 +278,55 @@ main p {
 #feature {
   height: 600px;
   color: #c8c8cb;
+  margin-top: 200px;
 }
 #feature article {
-  background: #3B3E5D;
+  background: linear-gradient(to right, #1f3f5b, #3B3E5D);
   border-radius: 0 80px 0 80px;
-  height: 460px;
+  height: 550px;
 }
-#feature article .container, #feature article .row {
+#feature article .container-fluid, #feature article .row {
   height: 100%;
 }
-#feature article img {
-  transform: translateY(-80px);
+#feature article .container-fluid .row {
+  position: relative;
 }
-#feature article #feature-description {
+#feature article .container-fluid .row #feature-background-image {
+  position: absolute;
   height: 100%;
+  background: url(../images/bg-pattern-circles.svg) no-repeat;
+  background-size: 160%;
+  background-position: 50% 500%;
+  border-radius: 0 80px 0 80px;
+}
+#feature article .container-fluid .row img {
+  margin-top: -170px;
+  z-index: 10;
+}
+#feature article .container-fluid .row #feature-description {
+  margin-bottom: 100px;
+  z-index: 10;
 }
 
 @media (max-width: 768px) {
   #navigation .row #logo {
     height: 25px;
+  }
+}
+@media (min-width: 768px) {
+  #feature article {
+    height: 420px;
+  }
+  #feature article .container-fluid .row #feature-background-image {
+    position: absolute;
+    height: 100%;
+    background: url(../images/bg-pattern-circles.svg) no-repeat -45% 90%;
+  }
+  #feature article .container-fluid .row img {
+    padding-left: 150px;
+    transform: translateY(100px);
+  }
+  #feature article .container-fluid .row #feature-description {
+    padding-right: 150px;
   }
 }

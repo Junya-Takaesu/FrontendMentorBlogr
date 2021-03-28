@@ -1,3 +1,7 @@
 @media (max-width: 768px) {
   @import "./navigation";
 }
+
+@media (min-width: 768px) {
+  @import "./feature";
+}
