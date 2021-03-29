@@ -13,9 +13,11 @@ Users should be able to:
 
 ### Screenshot
 
-![Image of whole the website](https://github.com/Junya-Takaesu/FrontendMentorBlogr/main/../../../../../images/screenshots/whole.png)
-![Image of whole the website](https://github.com/Junya-Takaesu/FrontendMentorBlogr/main/../../../../../images/screenshots/whole_sp.png)
-![Image of whole the website](https://github.com/Junya-Takaesu/FrontendMentorBlogr/main/../../../../../images/screenshots/hamburger.png)
+![Image of whole the website](images/screenshots/whole.png)
+
+![Image of whole the website](images/screenshots/whole_sp.png)
+
+![Image of whole the website](images/screenshots/hamburger.png)
 
 ### Links
 
