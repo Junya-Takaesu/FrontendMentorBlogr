@@ -3,5 +3,7 @@
 }
 
 @media (min-width: 768px) {
+  @import "./basic";
   @import "./feature";
+  @import "./products";
 }

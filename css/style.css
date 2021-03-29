@@ -281,9 +281,6 @@ main p {
   top: 0;
   left: -19%;
 }
-.products2 .container .row article {
-  padding-top: 200px;
-}
 
 #editor-description {
   position: relative;
@@ -331,6 +328,10 @@ main p {
   }
 }
 @media (min-width: 768px) {
+  main p {
+    font-size: 16px;
+  }
+
   #feature article {
     height: 420px;
   }
@@ -345,5 +346,9 @@ main p {
   }
   #feature article .container-fluid .row #feature-description {
     padding-right: 150px;
+  }
+
+  .products2 .container .row article {
+    padding-top: 200px;
   }
 }
