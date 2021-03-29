@@ -319,6 +319,34 @@ main p {
   z-index: 10;
 }
 
+footer {
+  background: #25252d;
+  color: #c8c8cb;
+  border-radius: 0 80px 0 0;
+}
+footer h2 {
+  font-size: 36px;
+  font-weight: 600;
+  color: white;
+}
+footer dt {
+  font-weight: 600;
+  color: white;
+}
+footer dd {
+  font-weight: 100;
+}
+footer dd a:hover {
+  text-decoration: underline;
+  color: #c8c8cb;
+}
+footer .attribute-link {
+  color: orange;
+}
+footer .attribute-link:hover {
+  text-decoration: underline;
+}
+
 @media (max-width: 768px) {
   #navigation .row #logo {
     height: 25px;
@@ -350,5 +378,9 @@ main p {
 
   .products2 .container .row article {
     padding-top: 200px;
+  }
+
+  footer {
+    margin-top: 200px;
   }
 }

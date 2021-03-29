@@ -1,0 +1,27 @@
+footer {
+  background: $blue-black-very-dark;
+  color: $blue-grayish;
+  border-radius: 0 80px 0 0;
+  h2 {
+    font-size: 36px;
+    font-weight: 600;
+    color: $white;
+  }
+  dt {
+    font-weight: 600;
+    color: $white;
+  }
+  dd {
+    font-weight: 100;
+    a:hover {
+      text-decoration: underline;
+      color: $blue-grayish;
+    }
+  }
+  .attribute-link {
+    color: orange;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
